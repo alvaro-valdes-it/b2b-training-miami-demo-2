@@ -74,7 +74,8 @@ h1,h2,h3 { font-family:"Barlow Condensed",Impact,sans-serif; text-transform:uppe
 .coach-stamp strong { font:800 39px/.9 "Barlow Condensed",sans-serif; }
 .coach-stamp span { margin-top:8px; font-size:9px; text-transform:uppercase; letter-spacing:.13em; }
 .light-label { color:#c0c0ba; }
-.coach-copy h2 { max-width:650px; margin:40px 0 34px; font-size:clamp(52px,5.7vw,92px); line-height:.88; letter-spacing:-.035em; }
+.coach-name { margin:18px 0 0; color:var(--acid); font:700 15px/1 "Barlow",sans-serif; text-transform:uppercase; letter-spacing:.14em; }
+.coach-copy h2 { max-width:650px; margin:14px 0 34px; font-size:clamp(52px,5.7vw,92px); line-height:.88; letter-spacing:-.035em; }
 .coach-copy p { max-width:620px; margin-bottom:20px; color:#b8b8b2; font-size:17px; line-height:1.7; }
 .coach-copy .button { margin-top:22px; }
 .results { background:var(--paper); }
