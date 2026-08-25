@@ -131,7 +131,7 @@ footer { padding:55px clamp(22px,7vw,112px) 30px; background:var(--ink); color:#
   .header-cta { display:none; }
   .menu-button { display:block; }
   .training-row,.training-row.reverse { grid-template-columns:1fr 1fr; }
-  .training-photo-wrap { min-height:560px; }
+  .training-photo-wrap { min-height:0; aspect-ratio:4/3; }
   .training-copy { padding:60px 42px; }
   .coach-stamp { right:-20px; }
   .plan-row { grid-template-columns:1fr 1fr; }
@@ -160,7 +160,7 @@ footer { padding:55px clamp(22px,7vw,112px) 30px; background:var(--ink); color:#
   .intro-copy p { font-size:19px; }
   .training-row,.training-row.reverse { min-height:0; grid-template-columns:1fr; }
   .training-row.reverse .training-photo-wrap { order:0; }
-  .training-photo-wrap { min-height:460px; }
+  .training-photo-wrap { min-height:0; aspect-ratio:16/10; }
   .training-copy { padding:62px 22px 74px; }
   .mode-number { margin-bottom:35px; }
   .training-copy h3 { font-size:53px; }
