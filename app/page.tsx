@@ -77,7 +77,7 @@ export default function Home() {
   const freeMessage = language === "en" ? "Hi, I'd like to book my free session." : "Hola, me gustaría reservar mi sesión gratuita.";
   return <main>
     <header className="site-header">
-      <a className="wordmark" href="#top" aria-label="B2B Training Miami home"><span className="wordmark-mark">B2B</span><span className="wordmark-name">Training Miami</span></a>
+      <a className="wordmark" href="#top" aria-label="B2B Training Miami home"><img className="wordmark-mark" src="/images/originals/logo-mark-white.png" alt="" /><span className="wordmark-name">Training Miami</span></a>
       <nav className={menuOpen ? "nav-links open" : "nav-links"} aria-label="Main navigation">{t.nav.map((item, index) => <a key={item} href={t.navHref[index]} onClick={() => setMenuOpen(false)}>{item}</a>)}</nav>
       <div className="header-actions"><div className="language" aria-label="Language selector"><button className={language === "en" ? "active" : ""} onClick={() => setLanguage("en")}>EN</button><span>/</span><button className={language === "es" ? "active" : ""} onClick={() => setLanguage("es")}>ES</button></div><a className="header-cta" href={whatsappUrl(freeMessage)} target="_blank" rel="noreferrer">{t.inquire}</a><button className="menu-button" aria-label="Toggle navigation" aria-expanded={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><span /><span /></button></div>
     </header>
@@ -100,6 +100,6 @@ export default function Home() {
 
     <section className="final-cta"><img src={`${IMAGE_ROOT}/hero.webp`} alt="" loading="lazy" /><div className="final-overlay" /><div className="final-content reveal"><div className="eyebrow light"><span />{t.finalEyebrow}</div><h2>{t.finalTitle}</h2><p>{t.finalText}</p><a className="button primary" href={whatsappUrl(language === "en" ? "Hi, I'd like to learn more about training with B2B." : "Hola, me gustaría saber más sobre entrenar con B2B.")} target="_blank" rel="noreferrer">{t.finalCta}<Arrow /></a></div></section>
 
-    <footer><div className="footer-top"><a className="wordmark footer-wordmark" href="#top"><span className="wordmark-mark">B2B</span><span className="wordmark-name">Training Miami</span></a><a className="instagram" href="https://instagram.com/b2b_training.miami" target="_blank" rel="noreferrer">@b2b_training.miami <Arrow /></a></div><div className="footer-bottom"><span>© 2026 B2B Training Miami</span><a href="mailto:b2btraining.miami@gmail.com">b2btraining.miami@gmail.com</a><span>{t.demo}</span></div></footer>
+    <footer><div className="footer-top"><a className="wordmark footer-wordmark" href="#top"><img className="wordmark-mark" src="/images/originals/logo-mark-white.png" alt="B2B Training Miami" /><span className="wordmark-name">Training Miami</span></a><a className="instagram" href="https://instagram.com/b2b_training.miami" target="_blank" rel="noreferrer">@b2b_training.miami <Arrow /></a></div><div className="footer-bottom"><span>© 2026 B2B Training Miami</span><a href="mailto:b2btraining.miami@gmail.com">b2btraining.miami@gmail.com</a><span>{t.demo}</span></div></footer>
   </main>;
 }

@@ -12,7 +12,7 @@ h1,h2,h3,p { margin-top:0; }
 h1,h2,h3 { font-family:"Barlow Condensed",Impact,sans-serif; text-transform:uppercase; }
 .site-header { position:fixed; z-index:50; top:0; left:0; width:100%; height:78px; padding:0 clamp(20px,4vw,64px); display:flex; align-items:center; justify-content:space-between; color:#fff; background:rgba(9,10,10,.89); border-bottom:1px solid rgba(255,255,255,.14); backdrop-filter:blur(14px); }
 .wordmark { display:flex; align-items:center; gap:12px; min-width:max-content; }
-.wordmark-mark { width:43px; height:43px; display:grid; place-items:center; border:2px solid var(--acid); color:var(--acid); font:800 20px/1 "Barlow Condensed",sans-serif; transform:skew(-7deg); }
+.wordmark-mark { width:43px; height:auto; object-fit:contain; }
 .wordmark-name { font:700 18px/1 "Barlow Condensed",sans-serif; text-transform:uppercase; letter-spacing:.07em; }
 .nav-links { display:flex; align-items:center; gap:clamp(20px,3vw,44px); margin-left:auto; margin-right:clamp(20px,4vw,64px); }
 .nav-links a { font:600 13px/1 "Barlow",sans-serif; text-transform:uppercase; letter-spacing:.12em; color:#d9d9d4; transition:color .2s; }
@@ -140,7 +140,7 @@ footer { padding:55px clamp(22px,7vw,112px) 30px; background:var(--ink); color:#
   .site-header { height:68px; padding:0 18px; }
   html { scroll-padding-top:68px; }
   .wordmark-name { font-size:15px; }
-  .wordmark-mark { width:37px; height:37px; font-size:17px; }
+  .wordmark-mark { width:37px; height:auto; }
   .header-actions { gap:12px; }
   .nav-links { top:68px; }
   .hero { min-height:850px; }
